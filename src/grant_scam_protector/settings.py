@@ -25,7 +25,9 @@ SECRET_KEY = '-0w(a47$a03^qb^moip-=@+4%^t^q87xuz4abd*8m#(&v-*vdj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '0.0.0.0'
+]
 
 
 # Application definition
@@ -37,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+
+    'open_ai_integration.apps.OpenAiIntegrationConfig',
 ]
 
 MIDDLEWARE = [
